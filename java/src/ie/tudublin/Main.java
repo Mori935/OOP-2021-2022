@@ -8,6 +8,18 @@ public class Main
         processing.core.PApplet.runSketch( a, new BugZap());
     }
 
+    public static void bugZap()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new BugZap());
+    }
+
+    public static void loops()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Loops());
+    }
+
     public void cat()
     {
         System.out.println("Hello world");
@@ -33,7 +45,11 @@ public class Main
     }
     public static void main(String[] args)
     {
+<<<<<<< HEAD
         BugZap();
+=======
+        bugZap();
+>>>>>>> 32791f4ad6e914917f1724d84f8fb44506699232
 
         // Tara Misty
         // Tara Tara
