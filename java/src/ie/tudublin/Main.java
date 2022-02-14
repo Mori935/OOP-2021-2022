@@ -46,10 +46,14 @@ public class Main
     public static void main(String[] args)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         BugZap();
 =======
         bugZap();
 >>>>>>> 32791f4ad6e914917f1724d84f8fb44506699232
+=======
+        loops();
+>>>>>>> c1dcd3b3d001efcb20626a40a7855df7e74ce3f0
 
         // Tara Misty
         // Tara Tara
