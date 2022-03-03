@@ -1,11 +1,13 @@
 package ie.tudublin;
 
+
+
 public class Main
 {
-    public static void BugZap()
+    public static void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new BugZap());
+        processing.core.PApplet.runSketch( a, new HelloProcessing());
     }
 
     public static void bugZap()
@@ -20,6 +22,18 @@ public class Main
         processing.core.PApplet.runSketch( a, new Loops());
     }
 
+    public static void arrays()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Arrays());
+    }
+
+    
+    public static void Audio1()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Audio1());
+    }
     public void cat()
     {
         System.out.println("Hello world");
@@ -45,15 +59,7 @@ public class Main
     }
     public static void main(String[] args)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BugZap();
-=======
-        bugZap();
->>>>>>> 32791f4ad6e914917f1724d84f8fb44506699232
-=======
-        loops();
->>>>>>> c1dcd3b3d001efcb20626a40a7855df7e74ce3f0
+        Audio1();
 
         // Tara Misty
         // Tara Tara
