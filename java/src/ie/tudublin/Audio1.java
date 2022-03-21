@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-import javax.swing.text.AbstractDocument.LeafElement;
+//import javax.swing.text.AbstractDocument.LeafElement;
 
 import ddf.minim.AudioBuffer;
 import ddf.minim.AudioInput;
