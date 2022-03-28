@@ -1,9 +1,8 @@
 package ie.tudublin;
 
-import processing.core.PApplet;
 import processing.data.TableRow;
 
-public class Star extends PApplet {
+public class Star{
     private boolean hab;
     private String displayName;
     private float distance;
