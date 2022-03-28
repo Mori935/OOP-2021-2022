@@ -40,8 +40,6 @@ public class Main
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Audio1());
     }
-<<<<<<< HEAD
-=======
 
     public static void audio2()
 	{
@@ -55,7 +53,6 @@ public class Main
         processing.core.PApplet.runSketch( a, new ColorfulLife());
     }
 
->>>>>>> 0e4ccf8c75afbd2fba88b712508569ab5bba12ee
     public void cat()
     {
         System.out.println("Hello world");
