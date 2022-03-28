@@ -5,10 +5,6 @@ import ddf.minim.AudioInput;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import ddf.minim.analysis.FFT;
-<<<<<<< HEAD
-//import ddf.minim.analysis.WindowFunction;
-=======
->>>>>>> 51779e88c5f70100bbc46691d11b90cfec6b4f41
 import processing.core.PApplet;
 
 /*
@@ -80,11 +76,7 @@ public class Audio2 extends PApplet
         background(0);
         stroke(255);
         float halfH = height / 2;
-<<<<<<< HEAD
-        for(int i = 0; i < ab.size() ; i++)
-=======
         for(int i = 0 ; i < ab.size() ; i ++)
->>>>>>> 51779e88c5f70100bbc46691d11b90cfec6b4f41
         {
             line(i, halfH, i, halfH + ab.get(i) * halfH);
         }
@@ -92,26 +84,6 @@ public class Audio2 extends PApplet
         fft.window(FFT.HAMMING);
         fft.forward(ab);
 
-<<<<<<< HEAD
-        stroke(0,255,0);
-        for(int i = 0; i < fft.specSize(); i ++)
-        {
-            line(i, 0, i, fft.getBand(i) * 10);
-        }
-
-        int maxIndex = 0;
-
-        for(int)
-
-        //Fill out missing code!!
-
-        float freq = fft.indexToFreq(maxIndex);
-        fill(255);
-        text("Freq: " + freq, 100, 200);
-      
-    }
-        
-=======
         stroke(0, 255, 0);
         for(int i = 0 ; i < fft.specSize(); i ++)
         {
@@ -138,5 +110,4 @@ public class Audio2 extends PApplet
         text("Freq: " + freq, 100, 200);
 
     }        
->>>>>>> 51779e88c5f70100bbc46691d11b90cfec6b4f41
 }
