@@ -10,15 +10,15 @@ public class StarMap extends PApplet {
 
     ArrayList<Star> stars = new ArrayList<Star>();
     
-    float border;
-
+    public float border;
+   
     void drawGrid()
     {
-        background(0);
-        stroke(255,0,255);
+        stroke(255, 0, 255);
         textAlign(CENTER, CENTER);
-        textSize(24);
-        for(int i = -5; i <= 5; i++)
+        textSize(16);
+
+        for(int i = -5; i <=5; i++)
         {
             float x = map(i, -5, 5, border, width - border);
             line(x, border, x, height - border);
@@ -29,6 +29,16 @@ public class StarMap extends PApplet {
         }
     }
 
+
+    // void drawGrid()
+    // {
+    //     for(int i=0; i< width; i+=width/10)
+    //     {
+    //         line(i, 0, i, width);
+    //         line(0, i, width, i);
+    //     }
+    // }
+
     void printStars()
     {
         for(Star s:stars)
@@ -36,6 +46,8 @@ public class StarMap extends PApplet {
             System.out.println(s);
         }
     }
+
+    
 
     void loadStars()
     {
@@ -59,16 +71,24 @@ public class StarMap extends PApplet {
 
     public void setup() {
         colorMode(RGB);
-        loadStars();
-        printStars();
-        border = width * 0.1f;
+        //drawGrid();
+        border = width *0.1f;
+        //loadStars();
+        //printStars();
+        
     }
 
     public void drawStars()
     {
+        for(Star s:stars)
+        {
+            s.render(this);
+        }
     }
 
     public void draw() 
     {
+        background(0);
+        drawGrid();
     }
 }
